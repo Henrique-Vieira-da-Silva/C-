@@ -1,0 +1,12 @@
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\bin\Debug\protótipos.exe.config
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\bin\Debug\protótipos.exe
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\bin\Debug\protótipos.pdb
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.csprojResolveAssemblyReference.cache
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.Form1.resources
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.Properties.Resources.resources
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.csproj.GenerateResource.Cache
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.exe
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.pdb
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.usuariosForm.resources
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\bin\Debug\Newtonsoft.Json.xml

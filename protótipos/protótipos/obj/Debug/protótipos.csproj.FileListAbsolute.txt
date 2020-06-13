@@ -10,3 +10,4 @@ C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\prot�
 C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.usuariosForm.resources
 C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\bin\Debug\Newtonsoft.Json.dll
 C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HenriqueUser\Desktop\prototipos\protótipos\protótipos\obj\Debug\protótipos.login.resources

@@ -32,7 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gerenciarUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerenciarUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +57,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -81,7 +83,7 @@
             // 
             this.usuáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.entrarToolStripMenuItem,
-            this.gerenciarUsuáriosToolStripMenuItem,
+            this.gerenciarUsuarios,
             this.sairToolStripMenuItem});
             this.usuáriosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usuáriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuáriosToolStripMenuItem.Image")));
@@ -93,20 +95,22 @@
             // 
             this.entrarToolStripMenuItem.Name = "entrarToolStripMenuItem";
             this.entrarToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
-            this.entrarToolStripMenuItem.Text = "Entrar";
+            this.entrarToolStripMenuItem.Text = "Trocar de usuário";
+            this.entrarToolStripMenuItem.Click += new System.EventHandler(this.entrarToolStripMenuItem_Click);
             // 
-            // gerenciarUsuáriosToolStripMenuItem
+            // gerenciarUsuarios
             // 
-            this.gerenciarUsuáriosToolStripMenuItem.Name = "gerenciarUsuáriosToolStripMenuItem";
-            this.gerenciarUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
-            this.gerenciarUsuáriosToolStripMenuItem.Text = "Gerenciar usuários";
-            this.gerenciarUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.gerenciarUsuáriosToolStripMenuItem_Click);
+            this.gerenciarUsuarios.Name = "gerenciarUsuarios";
+            this.gerenciarUsuarios.Size = new System.Drawing.Size(210, 26);
+            this.gerenciarUsuarios.Text = "Gerenciar usuários";
+            this.gerenciarUsuarios.Click += new System.EventHandler(this.gerenciarUsuáriosToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
@@ -320,11 +324,43 @@
             this.panel3.Size = new System.Drawing.Size(819, 257);
             this.panel3.TabIndex = 4;
             // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(739, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 29);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Sair (X)";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.SystemColors.Control;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(644, 0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(89, 29);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Maximizar";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(819, 399);
+            this.ControlBox = false;
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel2);
@@ -349,7 +385,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gerenciarUsuáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerenciarUsuarios;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
@@ -374,6 +410,8 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 

@@ -10,18 +10,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace protótipos
 {
     public partial class Form1 : Form
     {
-        public  Form1()
+
+        string url = "http://localhost/Projeto-Estoque-master/";
+        public Form1()
         {
             InitializeComponent();
-            
-            
-            
+
+
+
         }
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -38,7 +44,8 @@ namespace protótipos
 
         }
 
-        private bool login(string cpf,string senha) {
+        private bool login(string cpf, string senha)
+        {
             string dadosPOST = "title=macoratti";
             dadosPOST = dadosPOST + "&body=teste de envio de post";
             dadosPOST = dadosPOST + "&userId=1";
@@ -61,14 +68,14 @@ namespace protótipos
                 StreamReader reader = new StreamReader(streamDados);
                 object objResponse = reader.ReadToEnd();
                 var post = JsonConvert.DeserializeObject<resultado>(objResponse.ToString());
-                
+
                 streamDados.Close();
                 resposta.Close();
-                return (post.status); 
+                return (post.status);
             }
-  
+
         }
-    
+
 
         private void gerenciarUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -82,6 +89,98 @@ namespace protótipos
         public void painel(Form novo)
         {
             panel3.Controls.Add(novo);
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                JObject user = get.post(url + "sair.php", "");
+                var status = user["status"];
+                if (status.ToString() == "True")
+                {
+                    foreach (Form frm in Application.OpenForms)
+                    {
+                        if (frm is login)
+                        {
+                            frm.Close();
+                            break;
+                        }
+                    }
+                    this.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Tente novamente, erro de conexão!");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Tente novamente, erro de conexão!");
+            }
+
+        }
+
+        public void bloqueia()
+        {
+            gerenciarUsuarios.Enabled = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            sairToolStripMenuItem_Click(sender, e);
+        }
+
+        private void entrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                JObject user = get.post(url + "sair.php", "");
+                var status = user["status"];
+                if (status.ToString() == "True")
+                {
+                    foreach (Form frm in Application.OpenForms)
+                    {
+                        if (frm is login)
+                        {
+                            frm.Visible = true;
+                            break;
+                        }
+                    }
+                    this.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Tente novamente, erro de conexão!");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Tente novamente, erro de conexão!");
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+            if (button7.Text == "Maximizar")
+            {
+                this.MaximizeBox = true;
+
+                button7.Text = "Minimizar";
+            }
+            else if (button7.Text == "Minimizar")
+            {
+                button7.Text = "Maximizar";
+                this.MaximizeBox = false;
+
+            }
         }
     }
 

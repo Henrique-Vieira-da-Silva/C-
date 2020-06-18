@@ -59,6 +59,7 @@ namespace protótipos
                     txtSenha.Text = "";
                     Form1 form = new Form1();
                     form.Show();
+                    
                    
                     if (user["type"].ToString() == "2")
                     {
@@ -84,7 +85,9 @@ namespace protótipos
 
         }
 
-      
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -168,7 +168,8 @@ namespace protótipos
 
         private void button7_Click(object sender, EventArgs e)
         {
-            
+            this.MaximizeBox = true;
+
             if (button7.Text == "Maximizar")
             {
                 this.MaximizeBox = true;
@@ -181,6 +182,58 @@ namespace protótipos
                 this.MaximizeBox = false;
 
             }
+        }
+
+        private void gerenciarProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProdutosForm user = new ProdutosForm();
+            user.TopLevel = false;
+            user.Visible = true;
+            user.MaximizeBox = true;
+            panel3.Controls.Add(user);
+        }
+
+        private void gerenciarComprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            vendaForm user = new vendaForm();
+            user.TopLevel = false;
+            user.Visible = true;
+            user.MaximizeBox = true;
+            panel3.Controls.Add(user);
+        }
+
+        private void gerenciarEstoqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EstoqueForm user = new EstoqueForm();
+            user.TopLevel = false;
+            user.Visible = true;
+            user.MaximizeBox = true;
+            panel3.Controls.Add(user);
+        }
+
+        private void novaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gerenciarVendasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            vendaForm user = new vendaForm();
+            user.TopLevel = false;
+            user.Visible = true;
+            user.MaximizeBox = true;
+            panel3.Controls.Add(user);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            usuariosForm user = new usuariosForm();
+            user.TopLevel = false;
+            user.Visible = true;
+            user.MaximizeBox = true;
+            panel3.Controls.Add(user);
+            user.esconderEdicao(true);
+            
         }
     }
 

@@ -86,13 +86,13 @@
             this.gerenciarUsuarios,
             this.sairToolStripMenuItem});
             this.usuáriosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usuáriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuáriosToolStripMenuItem.Image")));
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(83, 25);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // entrarToolStripMenuItem
             // 
+            this.entrarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("entrarToolStripMenuItem.Image")));
             this.entrarToolStripMenuItem.Name = "entrarToolStripMenuItem";
             this.entrarToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.entrarToolStripMenuItem.Text = "Trocar de usuário";
@@ -100,6 +100,7 @@
             // 
             // gerenciarUsuarios
             // 
+            this.gerenciarUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("gerenciarUsuarios.Image")));
             this.gerenciarUsuarios.Name = "gerenciarUsuarios";
             this.gerenciarUsuarios.Size = new System.Drawing.Size(210, 26);
             this.gerenciarUsuarios.Text = "Gerenciar usuários";
@@ -107,6 +108,7 @@
             // 
             // sairToolStripMenuItem
             // 
+            this.sairToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sairToolStripMenuItem.Image")));
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.sairToolStripMenuItem.Text = "Sair";
@@ -118,9 +120,8 @@
             this.novoToolStripMenuItem,
             this.gerenciarProdutosToolStripMenuItem});
             this.produtosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.produtosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("produtosToolStripMenuItem.Image")));
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(101, 25);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.produtosToolStripMenuItem.Text = "Produtos";
             // 
             // novoToolStripMenuItem
@@ -134,6 +135,7 @@
             this.gerenciarProdutosToolStripMenuItem.Name = "gerenciarProdutosToolStripMenuItem";
             this.gerenciarProdutosToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
             this.gerenciarProdutosToolStripMenuItem.Text = "Gerenciar Produtos";
+            this.gerenciarProdutosToolStripMenuItem.Click += new System.EventHandler(this.gerenciarProdutosToolStripMenuItem_Click);
             // 
             // comprasToolStripMenuItem
             // 
@@ -141,9 +143,8 @@
             this.novaToolStripMenuItem,
             this.gerenciarComprasToolStripMenuItem});
             this.comprasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comprasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("comprasToolStripMenuItem.Image")));
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(101, 25);
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.comprasToolStripMenuItem.Text = "Compras";
             // 
             // novaToolStripMenuItem
@@ -157,6 +158,7 @@
             this.gerenciarComprasToolStripMenuItem.Name = "gerenciarComprasToolStripMenuItem";
             this.gerenciarComprasToolStripMenuItem.Size = new System.Drawing.Size(211, 26);
             this.gerenciarComprasToolStripMenuItem.Text = "Gerenciar compras";
+            this.gerenciarComprasToolStripMenuItem.Click += new System.EventHandler(this.gerenciarComprasToolStripMenuItem_Click);
             // 
             // estoqueToolStripMenuItem
             // 
@@ -164,9 +166,8 @@
             this.novoToolStripMenuItem1,
             this.gerenciarEstoqueToolStripMenuItem});
             this.estoqueToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estoqueToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("estoqueToolStripMenuItem.Image")));
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(93, 25);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(77, 25);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             // 
             // novoToolStripMenuItem1
@@ -180,6 +181,7 @@
             this.gerenciarEstoqueToolStripMenuItem.Name = "gerenciarEstoqueToolStripMenuItem";
             this.gerenciarEstoqueToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.gerenciarEstoqueToolStripMenuItem.Text = "Gerenciar Estoque";
+            this.gerenciarEstoqueToolStripMenuItem.Click += new System.EventHandler(this.gerenciarEstoqueToolStripMenuItem_Click);
             // 
             // vendasToolStripMenuItem
             // 
@@ -187,9 +189,8 @@
             this.novaToolStripMenuItem1,
             this.gerenciarVendasToolStripMenuItem});
             this.vendasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vendasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vendasToolStripMenuItem.Image")));
             this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
-            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(89, 25);
+            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(73, 25);
             this.vendasToolStripMenuItem.Text = "Vendas";
             // 
             // novaToolStripMenuItem1
@@ -197,19 +198,20 @@
             this.novaToolStripMenuItem1.Name = "novaToolStripMenuItem1";
             this.novaToolStripMenuItem1.Size = new System.Drawing.Size(202, 26);
             this.novaToolStripMenuItem1.Text = "Nova";
+            this.novaToolStripMenuItem1.Click += new System.EventHandler(this.novaToolStripMenuItem1_Click);
             // 
             // gerenciarVendasToolStripMenuItem
             // 
             this.gerenciarVendasToolStripMenuItem.Name = "gerenciarVendasToolStripMenuItem";
             this.gerenciarVendasToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.gerenciarVendasToolStripMenuItem.Text = "Gerenciar Vendas";
+            this.gerenciarVendasToolStripMenuItem.Click += new System.EventHandler(this.gerenciarVendasToolStripMenuItem_Click);
             // 
             // financeiroToolStripMenuItem
             // 
             this.financeiroToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.financeiroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("financeiroToolStripMenuItem.Image")));
             this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
-            this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(110, 25);
+            this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(94, 25);
             this.financeiroToolStripMenuItem.Text = "Financeiro";
             // 
             // panel1
@@ -243,10 +245,11 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 86);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Novo Produto";
+            this.button5.Text = "Novo Usuário";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -255,7 +258,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(98, 86);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Novo Produto";
+            this.button4.Text = "Atalho4";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
@@ -267,7 +270,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 86);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Novo Produto";
+            this.button3.Text = "Atalho2";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
@@ -280,7 +283,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(98, 86);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Novo Produto";
+            this.button2.Text = "Atalho3";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = true;
@@ -292,7 +295,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 86);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Novo Produto";
+            this.button1.Text = "Atalho1";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
@@ -330,11 +333,11 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(739, 0);
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(781, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 29);
+            this.button6.Size = new System.Drawing.Size(38, 29);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Sair (X)";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -344,11 +347,11 @@
             this.button7.BackColor = System.Drawing.SystemColors.Control;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(644, 0);
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(739, 0);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(89, 29);
+            this.button7.Size = new System.Drawing.Size(36, 29);
             this.button7.TabIndex = 6;
-            this.button7.Text = "Maximizar";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -366,9 +369,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

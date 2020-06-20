@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EstoqueForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.atualizar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tabela = new System.Windows.Forms.ListView();
@@ -42,8 +44,10 @@
             // 
             this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.atualizar);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
@@ -53,41 +57,66 @@
             this.panel2.Size = new System.Drawing.Size(786, 106);
             this.panel2.TabIndex = 11;
             // 
-            // button1
+            // atualizar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F);
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(752, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 54);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.atualizar.BackColor = System.Drawing.Color.White;
+            this.atualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.atualizar.FlatAppearance.BorderSize = 3;
+            this.atualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.atualizar.Font = new System.Drawing.Font("Segoe UI Symbol", 12F);
+            this.atualizar.Image = ((System.Drawing.Image)(resources.GetObject("atualizar.Image")));
+            this.atualizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.atualizar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.atualizar.Location = new System.Drawing.Point(273, 6);
+            this.atualizar.Name = "atualizar";
+            this.atualizar.Size = new System.Drawing.Size(125, 97);
+            this.atualizar.TabIndex = 13;
+            this.atualizar.Text = "Atualizar";
+            this.atualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.atualizar.UseVisualStyleBackColor = false;
+            this.atualizar.Click += new System.EventHandler(this.atualizar_Click);
             // 
-            // button2
+            // label2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Symbol", 12F);
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(273, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 97);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Editar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(725, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Fechar";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Yu Gothic UI", 48F, System.Drawing.FontStyle.Bold);
+            this.button5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button5.Location = new System.Drawing.Point(725, -16);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(54, 100);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "×";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F);
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(528, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 30);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Gerenciar Estoques";
             // 
             // button3
             // 
@@ -149,6 +178,7 @@
             this.Name = "EstoqueForm";
             this.Text = "EstoqueForm";
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,10 +187,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListView tabela;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button atualizar;
     }
 }

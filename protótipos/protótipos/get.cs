@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.IO;
 using System.Net;
 using System.Text;
@@ -35,7 +35,7 @@ namespace protótipos
                     var streamDados = resposta.GetResponseStream();
                     StreamReader reader = new StreamReader(streamDados);
                     object objResponse = reader.ReadToEnd();
-                         //  MessageBox.Show("retorno: "+objResponse.ToString());//#####################
+                       //  MessageBox.Show("retorno: "+objResponse.ToString());//#####################
                     var jo = JObject.Parse(objResponse.ToString());
                     streamDados.Close();
                     resposta.Close();

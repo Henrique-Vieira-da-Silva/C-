@@ -48,46 +48,46 @@ namespace protótipos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-                JObject user = get.post(url + "login.php", "&cpf=" + txtCpf.Text + "&senha=" + txtSenha.Text);
-                var status = user["status"];
-                if (status.ToString() == "True")
+            Form1 form = new Form1();
+            form.Show();
+       
+                try
                 {
-                    txtCpf.Text = "";
-                    txtSenha.Text = "";
-                    Form1 form = new Form1();
-                    form.Show();
-                    
-                   
-                    if (user["type"].ToString() == "2")
+
+                    JObject user = get.post(url + "login.php", "&cpf=" + txtCpf.Text + "&senha=" + txtSenha.Text);
+                    var status = user["status"];
+                    if (status.ToString() == "True")
                     {
-                        form.bloqueia();
-                        
+                        txtCpf.Text = "";
+                        txtSenha.Text = "";
+                       form = new Form1();
+                        form.Show();
+
+
+                        if (user["type"].ToString() == "2")
+                        {
+                            form.bloqueia();
+
+                        }
+
+
+
+                        this.Visible = false;
+
                     }
-                   
-
-
-                    this.Visible = false;
-
+                    else
+                    {
+                        MessageBox.Show("CPF ou senha errados!");
+                    }
                 }
-                else
+                catch
                 {
-                    MessageBox.Show("CPF ou senha errados!");
+                    MessageBox.Show("CPF ou senha errados");
                 }
-            }
-            catch
-            {
-                MessageBox.Show("CPF ou senha errados");
-            }
 
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

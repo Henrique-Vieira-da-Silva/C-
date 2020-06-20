@@ -37332,19 +37332,11 @@
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
-  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAABpSURBVDhP3YxBCsAgDARD8P9fbi00YZEkruKlHdiLTkY+x/XuGBZkouimPiV1Ri91WZFxnFHG
-        g+pvih+pKgZsy0QR3B6ttXOxThR7tkUUsi2RBaI3iuqw+gthDhjHYUX0SncqAFTw94jctVhrp+hRUlIA
-        AAAASUVORK5CYII=
-</value>
-  </data>
   <data name="button7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAABJSURBVDhP7cyxCgAgCEVRN///iy0jQnMpzSkvvIqGA1sUGSLyrTIfN6WBfEQ3SgVdTeBnsEdL
-        9VQgN94FnidAuSegKgV0zYIADcODg7afCpmQAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAElJREFUOE/t
+        zLEKACAIRVE3//+LLSNCcynNKS+8ioYDWxQZIvKtMh83pYF8RDdKBV1N4GewR0v1VCA33gWeJ0C5J6Aq
+        BXTNggANw4ODtp8KmZAAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
